@@ -5,7 +5,7 @@ pipeline {
     stage('git checkout')
     steps {
       script{
-        sh 'git credentialsId: 'github', url: 'https://github.com/tsprasath/hello-kubernetes.git'
+        sh 'git credentialsId: 'github', url: 'https://github.com/tsprasath/hello-kubernetes.git''
           }
     }
   }
