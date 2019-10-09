@@ -1,6 +1,14 @@
 pipeline {
   agent any
   stages {
+    
+    stage('git checkout')
+    steps {
+      script{
+        sh 'git credentialsId: 'github', url: 'https://github.com/tsprasath/hello-kubernetes.git'
+          }
+    }
+  }
     stage('Building docker image ') {
       steps {
         script {
