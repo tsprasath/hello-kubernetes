@@ -25,7 +25,7 @@ WORKDIR /usr/src/app
 COPY package.json /usr/src/app/
 RUN npm install
 
-## Bundle app source
+# Bundle app source
 COPY . /usr/src/app
 
 CMD [ "npm", "start" ]
