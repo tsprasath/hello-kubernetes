@@ -1,0 +1,5 @@
+resources:
+- ../../base
+images:
+- name: paulbouwer/hello-kubernetes
+  newTag: 1.5

@@ -58,7 +58,7 @@ spec:
 ```
 
 ```bash
-$ kubectl apply -f yaml/hello-kubernetes.yaml
+$ kubectl apply -k yaml/overlays/prod
 ```
 
 Or, deploy by executing the following `run` and `expose` commands on `kubectl`. 
